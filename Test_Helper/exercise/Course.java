@@ -1,6 +1,6 @@
 package exercise;
 
-public class Course {
+public class Course implements Comparable<Course> {
 
 	private int courseId;
 	private String name;
@@ -55,6 +55,16 @@ public class Course {
 		clone.students = this.getStudents();
 		
 		return clone;
+	}
+
+	@Override
+	public String toString() {
+		return "Course [courseId=" + courseId + ", name=" + name + ", students=" + students + "]";
+	}
+
+	@Override
+	public int compareTo(Course o) {
+		return this.getName().compareTo(o.getName());
 	}
 	
 	
