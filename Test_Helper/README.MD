@@ -1,0 +1,3 @@
+- Class Course
+- Class CourseRunnable, initialize a Course array (that will be the line of a matrix) implements Runnable and calculate the sum of the students number
+- Class Main, define your matrix with students, the code creates a Thread Pool of m threads (m, number of lines of the matrix) and each thread is an instance of CourseRunnable; in the end it returns the total sum of the matrix
